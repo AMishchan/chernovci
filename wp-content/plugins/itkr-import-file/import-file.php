@@ -13,8 +13,11 @@ Version: 1.0
 
 <?php
 
-function itkr_read_dirs($file) {
+function itkr_read_dirs($file)
+{
+
     if (is_file($file)) {
+      
         $info = new SplFileInfo($file);
         if ($info->getExtension() == 'sql' ) {
             return $file;
@@ -32,7 +35,8 @@ function itkr_read_dirs($file) {
 }
 
 ?>
-<?php function itkr_options_page() { ?>
+<?php function itkr_options_page() 
+{ ?>
 
     <?php
         if( wp_verify_nonce( $_POST['fileup_nonce'], 'my_file_upload' ) ){
@@ -156,7 +160,7 @@ function itkr_custom_submenu_page_callback() {
         </select>
         
         <select name="insert_file" id="">';
-
+        
         foreach($arr_month as $file) {
             echo '<option value="'.$file.'">'.basename($file).'</option>';
         }
@@ -167,4 +171,5 @@ function itkr_custom_submenu_page_callback() {
             </form>
             </div>
         ';
+
 }

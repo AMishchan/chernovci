@@ -697,7 +697,9 @@ footer p img {
   word-wrap: inherit;
   width: 12.5%;
 }
-
+.update-nag{
+	display:none !important;
+}
 /*div.accordion-inner > table > tr > td {*/
   /*padding: 5px;border: 1px solid silver;*/
 /*}*/

@@ -23,7 +23,7 @@
 
         // авторизация не удалась
         if ( is_wp_error($user) ) {
-            $reg_errors->add('pwd', 'Неправильный пароль или логин');
+            $reg_errors->add('password', 'Неправильный пароль или логин');
         } else {
             wp_signon();
             wp_redirect(get_site_url().'/osobistij-kabinet');
@@ -57,7 +57,7 @@
 
                 <form name="loginform" id="loginform" action="" method="post">
 
-                <div class="form-group<?php if(isset($reg_errors) && $reg_errors->get_error_message('pwd')) echo ' has-error' ?>">
+                <div class="form-group<?php if(isset($reg_errors) && $reg_errors->get_error_message('password')) echo ' has-error' ?>">
                     <label for="user_login" class="col-md-12 control-label">Имя пользователя или e-mail</label>
 
                     <div class="col-md-12">
@@ -65,7 +65,7 @@
                     </div>
                 </div>
 
-                <div class="form-group<?php if(isset($reg_errors) && $reg_errors->get_error_message('pwd')) echo ' has-error' ?>">
+                <div class="form-group<?php if(isset($reg_errors) && $reg_errors->get_error_message('password')) echo ' has-error' ?>">
                     <label for="user_pass" class="col-md-12 control-label">Пароль</label>
 
                     <div class="col-md-12">
