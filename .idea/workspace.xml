@@ -51,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="import-file.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="import-file.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/itkr-import-file/import-file.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -62,6 +62,32 @@
                 <marker date="1514383235884" expanded="true" signature="4515:4763" placeholder="..." />
                 <marker date="1514383235884" expanded="true" signature="4558:4712" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="My plugin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/MAApl/My plugin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+              <folding>
+                <element signature="e#6#83#0#PHP" expanded="true" />
+                <marker date="1514391337688" expanded="true" signature="882:910" placeholder="DROP TABLE `... " />
+                <marker date="1514391337688" expanded="true" signature="1060:1445" placeholder="CREATE TABLE... IF" />
+                <marker date="1514391337688" expanded="true" signature="2120:2240" placeholder="INSERT INTO `${$table_name}`... " />
+                <marker date="1514391337688" expanded="true" signature="3640:3654" placeholder="SELECT * FRO... ${$table_name}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/MAApl/data.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,8 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/themes/easywp/library/register.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/easywp/home.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/easywp/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/chernovec/css/main.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/chernovec/functions.php" />
@@ -175,6 +199,8 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/MAAPlugin/infoExchange.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/test/login-page.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/itkr-import-file/import-file.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/MAApl/MAApl.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/MAApl/My plugin.php" />
       </list>
     </option>
   </component>
@@ -327,7 +353,61 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="itkr-import-file" />
+              <option name="myItemId" value="MAApl" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp.loc" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interkassa" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp.loc" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp.loc" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -350,11 +430,11 @@
       <recent name="$PROJECT_DIR$/wp-content/themes/easywp" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/plugins/MAApl" />
       <recent name="$PROJECT_DIR$/wp-content/plugins/MAAPlugin" />
       <recent name="$PROJECT_DIR$/wp-content/themes/test" />
       <recent name="$PROJECT_DIR$/wp-content/themes/test/template-parts" />
       <recent name="$PROJECT_DIR$/wp-content/themes/chernovec" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/easywp/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -442,12 +522,12 @@
       <workItem from="1513935525501" duration="11343000" />
       <workItem from="1513949177453" duration="1444000" />
       <workItem from="1514279265597" duration="4024000" />
-      <workItem from="1514365960117" duration="5008000" />
+      <workItem from="1514365960117" duration="9663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263978000" />
+    <option name="totallyTimeSpent" value="268633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="29" y="-3" width="1337" height="771" extended-state="6" />
@@ -493,29 +573,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-includes/class-phpass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53">
-          <caret line="120" column="13" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/default-filters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="372" column="62" selection-start-line="372" selection-start-column="29" selection-end-line="372" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../worker/PHPExcel-1.8.1/index.php" />
-    <entry file="file://$USER_HOME$/Downloads/theme-vega/reviews.php" />
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wa-quest-order/ajax-quest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-795">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/wa-quest-order/wa_quest_order.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -782,7 +839,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/MAAPlugin/interkassa.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/interkassa/interkassa.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="514" column="9" selection-start-line="514" selection-start-column="9" selection-end-line="514" selection-end-column="9" />
@@ -819,6 +876,52 @@
             <marker date="1514383235884" expanded="true" signature="4109:4263" placeholder="INSERT INTO $... " />
             <marker date="1514383235884" expanded="true" signature="4515:4763" placeholder="..." />
             <marker date="1514383235884" expanded="true" signature="4558:4712" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-admin/includes/upgrade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="2128" column="9" selection-start-line="2128" selection-start-column="9" selection-end-line="2128" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="763" column="9" selection-start-line="763" selection-start-column="9" selection-end-line="763" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/MAApl/data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/legacy.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/MAApl/My plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+          <folding>
+            <element signature="e#6#83#0#PHP" expanded="true" />
+            <marker date="1514391337688" expanded="true" signature="882:910" placeholder="DROP TABLE `... " />
+            <marker date="1514391337688" expanded="true" signature="1060:1445" placeholder="CREATE TABLE... IF" />
+            <marker date="1514391337688" expanded="true" signature="2120:2240" placeholder="INSERT INTO `${$table_name}`... " />
+            <marker date="1514391337688" expanded="true" signature="3640:3654" placeholder="SELECT * FRO... ${$table_name}" />
           </folding>
         </state>
       </provider>
