@@ -1,0 +1,265 @@
+<!doctype html >
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid navbar-link">
+                    <a href="#"><img class="navbar-img-google" src="img/g.png"></a>
+                    <a href="#"><img class="navbar-img-facebook" src="img/f.png"></a>
+                </div>
+            </nav>
+            <figure>
+                <img id="header-image" src="img/Черновцы1.jpg">
+            </figure>
+            <div class="row header-button">
+                <div>
+                    <div class="col-md-1">
+                        <button type="button" id="main-button" name="main-button" class="main-list-button btn btn-default">Головна</button>
+                    </div>
+                    <div class="col-md-1">
+                        <select class="main-list-button btn btn-default">
+                            <option value="0" selected >Про підриемство</option>
+                            <option>Історія підприємства</option>
+                            <option>Прийом громадян</option>
+                            <option>Вакансії</option>
+                            <option>Засновницькі документи</option>
+                            <option>Перелік боржників</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="main-list-button btn btn-default" onchange="top.location=this.value">
+                            <option value="0" selected >Сторінка споживача</option>
+                            <option value="login.php">Особовий рахунок</option>
+                            <option>Покрокова інструкція щодо реєстрації в особистому кабінеті</option>
+                            <option>Відкриття та переоформлення рахунку</option>
+                            <option>Звірка рахунку</option>
+                            <option>Встановлення лічильника</option>
+                            <option>Повірка лічильника</option>
+                            <option>Реструктуризація боргу</option>
+                            <option>Довідка про заборгованість</option>
+                            <option>Пільги та субсидії</option>
+                            <option>Як оплатити послуги</option>
+                            <option>Тарифи та послуги</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" id="normative-base" name="normative-base" class="main-list-button btn btn-default">Нормативна база</button>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="main-list-button btn btn-default">
+                            <option >Інвестиції</option>
+                            <option>Співробітництво</option>
+                            <option>Інвестиційні програми </option>
+                        </select>
+                    </div>
+                    <div class="col-md-1">
+                        <button type="button" id="ask-question" name="ask-question" class="main-list-button btn btn-default">Запитання відповіді</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" id="finance" name="finance" class="main-list-button btn btn-default">Фінансово-господарська діяльність</button>
+                    </div>
+                    <div class="col-md-1">
+                        <button type="button" id="contact" name="contact" class="main-list-button btn btn-default">Контакти</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <aside class="aside-left">
+            <div>
+                <button type="button" class="aside-left-button btn btn-default">
+                    Особистий кабінет
+                    <img class="aside-left-img" src="img/human.png">
+                </button>
+            </div>
+            <div>
+                <button type="button" class="aside-left-button btn btn-default">
+                    Подати показання лічильників
+                    <img class="aside-left-img" src="img/invoice.png">
+                </button>
+            </div>
+            <div>
+                <button type="button" class="aside-left-button btn btn-default">
+                    Сплатити послуги
+                    <img class="aside-left-img" src="img/online-pay.png">
+                </button>
+            </div>
+            <div>
+                <button type="button" class="aside-left-button btn btn-default">
+                    Абонентний відділ
+                    <img class="aside-left-img" src="img/group-of-users-silhouette.png">
+                </button>
+            </div>
+        </aside>
+
+        <aside class="aside-right">
+            <img class="aside-right-image" src="img/photo_2017-10-24_00-43-21.jpg">
+                <div>
+                    <button type="button" class="aside-right-button btn btn-default">Партнери
+                        <img class="aside-right-button-img" src="img/partnership.png">
+                    </button>
+                </div>
+                <div>
+                    <button type="button" class="aside-right-button btn btn-default">Органи державної влади і місцевого самоврядування
+                        <img class="aside-right-button-img" src="img/ukrain.png">
+                    </button>
+                </div>
+                <div>
+                    <button type="button" class="aside-right-button btn btn-default">Житлово-комунальні підприємства Чернівців
+                        <img class="aside-right-button-img" src="img/city.png">
+                    </button>
+                </div>
+                <div>
+                    <button type="button" class="aside-right-button btn btn-default">
+                        Перелік божників
+                        <img class="aside-right-button-img" src="img/list.png">
+                    </button>
+                </div>
+        </aside>
+        <section>
+                <div class="section-block">
+                    <div class="section-header">
+                        <h4><strong>Proin gravida nibk vel velit auctor alicuet.Aenean sollicitudin?</strong></h4>
+                    </div>
+                    <img src="img/167399_original.jpg" class="section-left-image">
+                        <p class="section-right-text">
+                            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                            lorem quis bibendum auctor, nisi elit.Proin gravida nibh vel velit auctor aliquet.
+                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.
+                        </p>
+                       <span class="section-date">00/00/0000</span>
+                       <a href="#" class="section-more">Детальнiше</a>
+                </div><hr>
+
+            <div class="section-block">
+                <div class="section-header">
+                    <h4><strong>Proin gravida nibk vel velit auctor alicuet.Aenean sollicitudin?</strong></h4>
+                </div>
+                <img src="img/167399_original.jpg" class="section-left-image">
+                <p class="section-right-text">
+                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                    lorem quis bibendum auctor, nisi elit.Proin gravida nibh vel velit auctor aliquet.
+                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.
+                </p>
+                <div>
+                    <span class="section-date">00/00/0000</span>
+                    <a href="#" class="section-more">Детальнiше</a>
+                </div>
+            </div><hr>
+
+            <div class="section-block">
+                <div class="section-header">
+                    <h4><strong>Proin gravida nibk vel velit auctor alicuet.Aenean sollicitudin?</strong></h4>
+                </div>
+                <img src="img/167399_original.jpg" class="section-left-image">
+                <p class="section-right-text">
+                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                    lorem quis bibendum auctor, nisi elit.Proin gravida nibh vel velit auctor aliquet.
+                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.
+                </p>
+                <div>
+                    <span class="section-date">00/00/0000</span>
+                    <a href="#" class="section-more">Детальнiше</a>
+                </div>
+            </div><hr>
+
+            <div class="section-block">
+                <div class="section-header">
+                    <h4><strong>Proin gravida nibk vel velit auctor alicuet.Aenean sollicitudin?</strong></h4>
+                </div>
+                <img src="img/167399_original.jpg" class="section-left-image">
+                <p class="section-right-text">
+                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                    lorem quis bibendum auctor, nisi elit.Proin gravida nibh vel velit auctor aliquet.
+                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.
+                </p>
+                <div>
+                    <span class="section-date">00/00/0000</span>
+                    <a href="#" class="section-more">Детальнiше</a>
+                </div>
+            </div><hr>
+
+            <div class="section-block">
+                <div class="section-header">
+                    <h4><strong>Proin gravida nibk vel velit auctor alicuet.Aenean sollicitudin?</strong></h4>
+                </div>
+                <img src="img/167399_original.jpg" class="section-left-image">
+                <p class="section-right-text">
+                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                    lorem quis bibendum auctor, nisi elit.Proin gravida nibh vel velit auctor aliquet.
+                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.
+                </p>
+                <div>
+                    <span class="section-date">00/00/0000</span>
+                    <a href="#" class="section-more">Детальнiше</a>
+                </div>
+            </div><hr>
+
+            <div class="section-block">
+                <div class="section-header">
+                    <h4><strong>Proin gravida nibk vel velit auctor alicuet.Aenean sollicitudin?</strong></h4>
+                </div>
+                <img src="img/167399_original.jpg" class="section-left-image">
+                <p class="section-right-text">
+                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                    lorem quis bibendum auctor, nisi elit.Proin gravida nibh vel velit auctor aliquet.
+                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.
+                </p>
+                <div>
+                    <span class="section-date">00/00/0000</span>
+                    <a href="#" class="section-more">Детальнiше</a>
+                </div>
+            </div><hr>
+                <ul class="pagination" id="pagination">
+                    <li class="active" ><a href="#" class="link-pagination" >1</a></li>
+                    <li><a href="#" class="link-pagination">2</a></li>
+                    <li><a href="#" class="link-pagination">3</a></li>
+                    <li><a href="#" class="link-pagination"> > </a></li>
+                </ul>
+        </section>
+    </div>
+
+        <footer>
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>Абонентський віддл</p>
+                    <p>вул.Головна, 210А<br>м.Чернівці<br>Індекс 5801В</p>
+                    <p><img class="footer-img" src="img/phone-receiver.png">+38(03722) 47 9 47</p>
+                    <p><img class="footer-img" src="img/phone-receiver.png">+38(03722) 47 9 82</p>
+                    <p><img class="footer-img" src="img/phone-receiver.png">+38(03722) 47 2 09</p>
+                </div>
+                <div class="col-sm-3">
+                    <p>Адміністрація</p>
+                    <p>Чернівцітеплокомуненерго,<br>вул.Максимовича,
+                        19А<br>м.Чернівці<br>Індекс 5801В
+                    </p>
+                    <p><img class="footer-img" src="img/phone-receiver.png">+38(03722) 41 1 35</p>
+                    <p><img class="footer-img" src="img/envelope.png">teplokomunenergo@gmail.com</p>
+                </div>
+                <div class="col-sm-3">
+                    <p>Контакти</p>
+                    <p>Бухгалтерія<br><img class="footer-img" src="img/phone-receiver.png"> +38(03722) 41 3 02</p>
+                    <p>Канцелярія<br><img class="footer-img" src="img/phone-receiver.png"> +38(03722) 47 8 44</p>
+                    <p>Юридичний відділ<br><img class="footer-img" src="img/phone-receiver.png"> +38(03722) 46 7 49</p>
+                </div>
+                <div class="col-sm-3">
+                    <p>Контакти</p>
+                    <p> Теплова інспекція<br><img class="footer-img" src="img/phone-receiver.png"> +38(03722) 51 47 25</p>
+                    <p> Відділ кадрів<br><img class="footer-img" src="img/phone-receiver.png"> +38(03722) 44 2 08</p>
+                    <p> Планово-економічний відділ<br><img class="footer-img" src="img/phone-receiver.png"> +38(03722) 41 3 00</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

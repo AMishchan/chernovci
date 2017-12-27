@@ -1,0 +1,66 @@
+.quest td {padding: 10px 20px;}
+.quest thead th {padding: 5px; }
+.quest tbody td {background-color: #fff; }
+.quest thead {background-color: darkgray;color: #fff;}
+.table {max-width: 100%;margin-bottom: 20px;}
+table {border-spacing: 0;border-collapse: collapse;}
+.table>tbody>tr.success>td, .table>tbody>tr.success>th,
+ .table>tbody>tr>td.success, .table>tbody>tr>th.success,
+  .table>tfoot>tr.success>td, .table>tfoot>tr.success>th,
+   .table>tfoot>tr>td.success, .table>tfoot>tr>th.success,
+    .table>thead>tr.success>td, .table>thead>tr.success>th,
+     .table>thead>tr>td.success, .table>thead>tr>th.success
+      {background-color: #dff0d8;}
+.table>tbody>tr.danger>td, .table>tbody>tr.danger>th,
+ .table>tbody>tr>td.danger, .table>tbody>tr>th.danger,
+  .table>tfoot>tr.danger>td, .table>tfoot>tr.danger>th,
+   .table>tfoot>tr>td.danger, .table>tfoot>tr>th.danger,
+    .table>thead>tr.danger>td, .table>thead>tr.danger>th,
+     .table>thead>tr>td.danger, .table>thead>tr>th.danger
+      {background-color: #f2dede;}
+.table>tbody>tr.active>td, .table>tbody>tr.active>th,
+ .table>tbody>tr>td.active, .table>tbody>tr>th.active,
+  .table>tfoot>tr.active>td, .table>tfoot>tr.active>th,
+   .table>tfoot>tr>td.active, .table>tfoot>tr>th.active,
+    .table>thead>tr.active>td, .table>thead>tr.active>th,
+     .table>thead>tr>td.active, .table>thead>tr>th.active
+      {background-color: #fff;}
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th,
+ .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th,
+  .table-bordered>thead>tr>td, .table-bordered>thead>tr>th
+   {border: 1px solid #ddd;}
+
+.btn-danger { color: #fff;background-color: #d9534f; border-color: #d43f3a; }
+#ajax_msg{
+  padding: 15px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 1;
+  text-align: center;
+  border-radius: 2px;
+  display: none;
+}
+.editable {cursor: pointer;}
+.editable:hover {background-color: lightyellow;background-size: 100%;}
+.alert-success, .btn-prove {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.alert.alert-success {
+    background-color: #4caf50;
+    color: rgba(255,255,255, 0.84);
+}
+.btn-order {
+  width: 35px;
+  height: 26px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+.btn-dell {
+  background-color: #f1c8c1;
+}
+.table-wrap {}
+.table-wrap h2 {}

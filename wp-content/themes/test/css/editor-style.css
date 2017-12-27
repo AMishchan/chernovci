@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Raleway:700,900,400,300&subset=latin,latin-ext);
+
+body,button,input,select,textarea {
+    font-family: Lora,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    clear: both;
+    font-family: 'Raleway',Arial,sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    margin: .6em 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}

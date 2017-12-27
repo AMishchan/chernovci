@@ -1,0 +1,1962 @@
+/*!**/
+/*Theme Name: EasyWP*/
+/*Theme URI: https://themesdna.com/easywp-wordpress-theme/*/
+/*Description: EasyWP is a simple and clean, user friendly, 3 columns, fully responsive WordPress blogging theme. It has various theme options to customize various aspects of the theme and has full-width layout, header widget area, left and right sidebars, 4 columns footer widgets area and social icons.*/
+/*Version: 1.0.2*/
+/*Author: ThemesDNA*/
+/*Author URI: https://themesdna.com/*/
+/*License: GNU General Public License v2 or later*/
+/*License URI: http://www.gnu.org/licenses/gpl-2.0.html*/
+/*Text Domain: easywp*/
+/*Tags: three-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog*/
+
+/*This theme, like WordPress, is licensed under the GPL.*/
+/*Use it to make something cool, have fun, and share what you've learned with others.*/
+
+/*EasyWP is based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc.*/
+/*Underscores is distributed under the terms of the GNU GPL v2 or later.*/
+
+/*Resetting and rebuilding styles have been helped along thanks to the fine work of*/
+/*Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.htmlalong with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/*/
+/**!*/
+
+/*!* Reset*/
+/*-------------------------------------------------------------- *!*/
+/*html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {*/
+    /*border: 0;*/
+    /*font-family: inherit;*/
+    /*font-size: 100%;*/
+    /*font-style: inherit;*/
+    /*font-weight: inherit;*/
+    /*margin: 0;*/
+    /*outline: 0;*/
+    /*padding: 0;*/
+    /*vertical-align: baseline;*/
+/*}*/
+
+/*html {*/
+    /*font-family: sans-serif;*/
+    /*font-size: 62.5%;*/
+    /*overflow-y: scroll;*/
+    /*-webkit-text-size-adjust: 100%;*/
+    /*-ms-text-size-adjust: 100%;*/
+/*}*/
+
+/*body {*/
+    /*background: #fff;*/
+    /*line-height: 1;*/
+/*}*/
+
+/*article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section {*/
+    /*display: block;*/
+/*}*/
+
+/*audio,canvas,progress,video {*/
+    /*display: inline-block;*/
+    /*vertical-align: baseline;*/
+/*}*/
+
+/*audio:not([controls]) {*/
+    /*display: none;*/
+    /*height: 0;*/
+/*}*/
+
+/*ol,ul {*/
+    /*list-style: none;*/
+/*}*/
+
+/*table {*/
+    /*border-collapse: separate;*/
+    /*border-spacing: 0;*/
+/*}*/
+
+/*caption,th,td {*/
+    /*font-weight: 400;*/
+    /*text-align: left;*/
+/*}*/
+
+/*textarea {*/
+    /*overflow: auto;*/
+/*}*/
+
+/*optgroup {*/
+    /*font-weight: 700;*/
+/*}*/
+
+/*sub,sup {*/
+    /*font-size: 75%;*/
+    /*line-height: 0;*/
+    /*position: relative;*/
+    /*vertical-align: baseline;*/
+/*}*/
+
+/*sup {*/
+    /*top: -.5em;*/
+/*}*/
+
+/*sub {*/
+    /*bottom: -.25em;*/
+/*}*/
+
+/*blockquote:before,blockquote:after,q:before,q:after {*/
+    /*content: '';*/
+    /*content: none;*/
+/*}*/
+
+/*blockquote,q {*/
+    /*quotes: none;*/
+/*}*/
+
+/*a {*/
+    /*background-color: transparent;*/
+/*}*/
+
+/*a:focus {*/
+    /*outline: thin dotted;*/
+/*}*/
+
+/*a:hover,a:active {*/
+    /*outline: 0;*/
+/*}*/
+
+/*a img {*/
+    /*border: 0;*/
+/*}*/
+
+/*[hidden] {*/
+    /*display: none;*/
+/*}*/
+
+/*abbr[title] {*/
+    /*border-bottom: 1px dotted;*/
+/*}*/
+
+/*b,strong {*/
+    /*font-weight: 700;*/
+/*}*/
+
+/*dfn,cite,em,i {*/
+    /*font-style: italic;*/
+/*}*/
+
+/*small {*/
+    /*font-size: 80%;*/
+/*}*/
+
+/*svg:not(:root) {*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*figure {*/
+    /*margin: 1em 40px;*/
+/*}*/
+
+/*hr {*/
+    /*-moz-box-sizing: content-box;*/
+    /*box-sizing: content-box;*/
+    /*height: 0;*/
+/*}*/
+
+/*pre {*/
+    /*overflow: auto;*/
+/*}*/
+
+/*code,kbd,pre,samp {*/
+    /*font-family: monospace,monospace;*/
+    /*font-size: 1em;*/
+/*}*/
+
+/*button,input,optgroup,select,textarea {*/
+    /*color: inherit;*/
+    /*font: inherit;*/
+    /*margin: 0;*/
+/*}*/
+
+/*button {*/
+    /*overflow: visible;*/
+/*}*/
+
+/*button,select {*/
+    /*text-transform: none;*/
+/*}*/
+
+/*button,html input[type="button"],input[type="reset"],input[type="submit"] {*/
+    /*-webkit-appearance: button;*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*button[disabled],html input[disabled] {*/
+    /*cursor: default;*/
+/*}*/
+
+/*button::-moz-focus-inner,input::-moz-focus-inner {*/
+    /*border: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+/*input {*/
+    /*line-height: normal;*/
+/*}*/
+
+/*input[type="checkbox"],input[type="radio"] {*/
+    /*box-sizing: border-box;*/
+    /*padding: 0;*/
+/*}*/
+
+/*input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {*/
+    /*height: auto;*/
+/*}*/
+
+/*input[type="search"] {*/
+    /*-webkit-appearance: textfield;*/
+    /*-moz-box-sizing: content-box;*/
+    /*-webkit-box-sizing: content-box;*/
+    /*box-sizing: content-box;*/
+/*}*/
+
+/*input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {*/
+    /*-webkit-appearance: none;*/
+/*}*/
+
+/*fieldset {*/
+    /*border: 1px solid silver;*/
+    /*margin: 0 2px;*/
+    /*padding: .35em .625em .75em;*/
+/*}*/
+
+/*html {*/
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+/*}*/
+
+/**,*::before,*::after {*/
+    /*-webkit-box-sizing: inherit;*/
+    /*-moz-box-sizing: inherit;*/
+    /*box-sizing: inherit;*/
+/*}*/
+
+/*img {*/
+    /*max-width: 100%;*/
+    /*height: auto;*/
+/*}*/
+
+/*embed, object, video {*/
+    /*max-width: 100%;*/
+/*}*/
+
+/*::-moz-selection {*/
+    /*background-color: #333333;*/
+    /*color: #ffffff;*/
+    /*text-shadow: none;*/
+/*}*/
+
+/*::selection {*/
+    /*background-color: #333333;*/
+    /*color: #ffffff;*/
+    /*text-shadow: none;*/
+/*}*/
+
+/*!* Clearings & Accessibility*/
+/*-------------------------------------------------------------- *!*/
+/*.clear {*/
+    /*clear: both;*/
+/*}*/
+
+/*.clearfix:before,.clearfix:after {*/
+    /*content: " ";*/
+    /*display: table;*/
+/*}*/
+
+/*.clearfix:after {*/
+    /*clear: both;*/
+/*}*/
+
+/*.screen-reader-text {*/
+    /*clip: rect(1px,1px,1px,1px);*/
+    /*position: absolute !important;*/
+    /*height: 1px;*/
+    /*width: 1px;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*.screen-reader-text:focus {*/
+    /*background-color: #f1f1f1;*/
+    /*border-radius: 3px;*/
+    /*box-shadow: 0 0 2px 2px rgba(0,0,0,0.6);*/
+    /*clip: auto !important;*/
+    /*color: #21759b;*/
+    /*display: block;*/
+    /*font-size: 14px;*/
+    /*font-weight: 700;*/
+    /*height: auto;*/
+    /*left: 5px;*/
+    /*line-height: normal;*/
+    /*padding: 15px 23px 14px;*/
+    /*text-decoration: none;*/
+    /*top: 5px;*/
+    /*width: auto;*/
+    /*z-index: 100000;*/
+/*}*/
+
+/*!* Forms*/
+/*-------------------------------------------------------------- *!*/
+/*button,input,select,textarea {*/
+    /*font-size: 100%;*/
+    /*margin: 0;*/
+    /*vertical-align: baseline;*/
+/*}*/
+
+/*button,input[type="button"],input[type="reset"],input[type="submit"] {*/
+    /*border: 1px solid #000;*/
+    /*border-radius: 3px;*/
+    /*background: #333333;*/
+    /*color: #ffffff;*/
+    /*cursor: pointer;*/
+    /*-webkit-appearance: button;*/
+    /*font-size: 12px;*/
+    /*line-height: 1;*/
+    /*padding: .6em 1em .8em;*/
+    /*text-shadow: 0 1px 0 #000;*/
+/*}*/
+
+/*button:hover,input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover {*/
+    /*background: #000000;*/
+/*}*/
+
+/*button:focus,input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,button:active,input[type="button"]:active,input[type="reset"]:active,input[type="submit"]:active {*/
+    /*background: #000000;*/
+/*}*/
+
+/*input[type="checkbox"],input[type="radio"] {*/
+    /*padding: 0;*/
+/*}*/
+
+/*input[type="search"] {*/
+    /*-webkit-appearance: textfield;*/
+    /*box-sizing: content-box;*/
+/*}*/
+
+/*input[type="search"]::-webkit-search-decoration {*/
+    /*-webkit-appearance: none;*/
+/*}*/
+
+/*input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],textarea {*/
+    /*color: #666;*/
+    /*border: 1px solid #ddd;*/
+    /*border-radius: 3px;*/
+/*}*/
+
+/*input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,textarea:focus {*/
+    /*color: #111;*/
+/*}*/
+
+/*input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"] {*/
+    /*padding: 3px;*/
+/*}*/
+
+/*textarea {*/
+    /*overflow: auto;*/
+    /*padding-left: 3px;*/
+    /*vertical-align: top;*/
+    /*width: 100%;*/
+/*}*/
+
+/*!* Typography & Elements*/
+/*-------------------------------------------------------------- *!*/
+/*body {*/
+    /*background: #eee;*/
+    /*font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;*/
+    /*line-height: 1.6;*/
+    /*margin: 0px;*/
+    /*padding: 0px;*/
+/*}*/
+
+/*body,button,input,select,textarea {*/
+    /*color: #555555;*/
+/*}*/
+
+/*button,input,select,textarea {*/
+    /*font-family: inherit;*/
+/*}*/
+
+/*button,select {*/
+    /*max-width: 100%;*/
+/*}*/
+
+/*a {*/
+    /*color: #444;*/
+    /*text-decoration: none;*/
+    /*outline: none;*/
+/*}*/
+
+/*a:hover {*/
+    /*color: #000;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*a:focus {*/
+    /*outline: none;*/
+/*}*/
+
+/*h1 {*/
+    /*font: normal bold 32px 'Playfair Display',Arial,sans-serif;*/
+/*}*/
+
+/*h2 {*/
+    /*font: normal bold 24px 'Playfair Display',Arial,sans-serif;*/
+/*}*/
+
+/*h3 {*/
+    /*font: normal bold 20px 'Playfair Display',Arial,sans-serif;*/
+/*}*/
+
+/*h4 {*/
+    /*font: normal bold 18px 'Playfair Display',Arial,sans-serif;*/
+/*}*/
+
+/*h5 {*/
+    /*font: normal bold 16px 'Playfair Display',Arial,sans-serif;*/
+/*}*/
+
+/*h6 {*/
+    /*font: normal bold 15px 'Playfair Display',Arial,sans-serif;*/
+/*}*/
+
+/*h1,h2,h3,h4 {*/
+    /*clear: both;*/
+    /*line-height: 1;*/
+    /*margin: .6em 0;*/
+/*}*/
+
+/*h5,h6 {*/
+    /*clear: both;*/
+    /*line-height: 1;*/
+    /*margin: 1em 0;*/
+/*}*/
+
+/*p {*/
+    /*margin-bottom: .7em;*/
+/*}*/
+
+/*blockquote {*/
+    /*margin: 1.5em;*/
+    /*color: #666;*/
+    /*overflow: hidden;*/
+    /*padding-left: 9px;*/
+    /*border-left: 3px solid #ccc;*/
+/*}*/
+
+/*address {*/
+    /*margin: 0 0 1.5em;*/
+/*}*/
+
+/*pre {*/
+    /*background: #eee;*/
+    /*font-family: "Courier 10 Pitch",Courier,monospace;*/
+    /*font-size: 15px;*/
+    /*line-height: 1.6;*/
+    /*margin-bottom: 1.6em;*/
+    /*max-width: 100%;*/
+    /*overflow: auto;*/
+    /*padding: 1.6em;*/
+/*}*/
+
+/*code,kbd,tt,var {*/
+    /*font-family: Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace;*/
+    /*font-size: 15px;*/
+/*}*/
+
+/*abbr,acronym {*/
+    /*border-bottom: 1px dotted #666;*/
+    /*cursor: help;*/
+/*}*/
+
+/*mark,ins {*/
+    /*background: #fff9c0;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*sup,sub {*/
+    /*font-size: 75%;*/
+    /*height: 0;*/
+    /*line-height: 0;*/
+    /*position: relative;*/
+    /*vertical-align: baseline;*/
+/*}*/
+
+/*sup {*/
+    /*bottom: 1ex;*/
+/*}*/
+
+/*sub {*/
+    /*top: .5ex;*/
+/*}*/
+
+/*small {*/
+    /*font-size: 75%;*/
+/*}*/
+
+/*big {*/
+    /*font-size: 125%;*/
+/*}*/
+
+/*hr {*/
+    /*background-color: #ccc;*/
+    /*border: 0;*/
+    /*height: 1px;*/
+    /*margin-bottom: 1.5em;*/
+/*}*/
+
+/*ul,ol {*/
+    /*margin: 0 0 1.5em 3em;*/
+/*}*/
+
+/*ul {*/
+    /*list-style: disc;*/
+/*}*/
+
+/*ol {*/
+    /*list-style: decimal;*/
+/*}*/
+
+/*li > ul,li > ol {*/
+    /*margin-bottom: 0;*/
+    /*margin-left: 1.5em;*/
+/*}*/
+
+/*dt {*/
+    /*font-weight: 700;*/
+/*}*/
+
+/*dd {*/
+    /*margin: 0 1.5em 1.5em;*/
+/*}*/
+
+/*img {*/
+    /*height: auto;*/
+    /*max-width: 100%;*/
+/*}*/
+
+/*figure {*/
+    /*margin: 0;*/
+/*}*/
+
+/*table {*/
+    /*margin: 0 0 1.5em;*/
+    /*width: 100%;*/
+/*}*/
+
+/*th {*/
+    /*font-weight: 700;*/
+/*}*/
+
+/*thead th {*/
+    /*background: #ccc;*/
+/*}*/
+
+/*th,td,caption {*/
+    /*padding: 4px 10px 4px 5px;*/
+/*}*/
+
+/*tr.even td {*/
+    /*background: #CDCFD3;*/
+/*}*/
+
+/*tfoot {*/
+    /*font-style: italic;*/
+/*}*/
+
+/*caption {*/
+    /*background: #eee;*/
+/*}*/
+
+/*img {*/
+    /*max-width: 100%;*/
+    /*height: auto;*/
+/*}*/
+
+/*embed,iframe,object {*/
+    /*max-width: 100%;*/
+/*}*/
+
+/*!* Layout-----------------------------------------------*!*/
+/*#easywp-body-wrapper {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+/*#easywp-outer-wrapper {*/
+    /*width: 1150px;*/
+    /*margin: 10px auto 0;*/
+    /*padding: 0;*/
+    /*text-align: left;*/
+/*}*/
+
+/*#easywp-header-wrapper {*/
+    /*width: 1150px;*/
+    /*margin: 0 auto 0;*/
+    /*height: auto;*/
+    /*padding: 0;*/
+    /*overflow: hidden;*/
+    /*background: #e0e0e0;*/
+    /*border-left: 1px solid #a8a8a8;*/
+    /*border-right: 1px solid #a8a8a8;*/
+    /*border-top: 1px solid #a8a8a8;*/
+/*}*/
+
+/*#easywp-header-inner {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*border-left: 1px solid #f9f9f9;*/
+    /*border-right: 1px solid #f9f9f9;*/
+    /*border-top: 1px solid #f9f9f9;*/
+/*}*/
+
+/*#easywp-header-content {*/
+    /*margin: 0;*/
+    /*padding: 15px 0 15px 0;*/
+/*}*/
+
+/*#easywp-header-left {*/
+    /*float: left;*/
+    /*margin: 0;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*#easywp-header-right {*/
+    /*float: right;*/
+    /*margin-right: 0;*/
+    /*padding-right: 0;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*#easywp-header-right .widget {*/
+    /*padding: 0 15px 0 0;*/
+    /*float: right;*/
+/*}*/
+
+/*.easywp-site-title {*/
+    /*color: #333333;*/
+    /*margin: 0;*/
+    /*padding: 0 0 0 15px;*/
+    /*font: normal bold 28px 'Playfair Display',Arial,Helvetica,Sans-serif;*/
+    /*line-height: 1;*/
+/*}*/
+
+/*.easywp-site-title a {*/
+    /*color: #333333;*/
+/*}*/
+
+/*.easywp-site-description {*/
+    /*padding-left: 15px;*/
+    /*padding-top: 0;*/
+    /*margin: 10px 0 5px 0;*/
+    /*font: normal normal 13px Domine,Arial,Helvetica,Sans-serif;*/
+    /*line-height: 1;*/
+/*}*/
+
+/*.easywp-header-image {*/
+    /*display: block;*/
+    /*margin: 0 auto;*/
+    /*padding: 0;*/
+    /*border: none;*/
+/*}*/
+
+/*.easywp-logo-image {*/
+    /*padding: 0 0 0 15px;*/
+/*}*/
+
+/*#easywp-content-wrapper {*/
+    /*padding: 15px 10px;*/
+    /*background: #fff url(images/easywp-content-wrapper.png) repeat-y scroll top left;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*#easywp-main-wrapper {*/
+    /*width: 660px;*/
+    /*margin: 0 0 0 235px;*/
+    /*padding: 0 10px;*/
+    /*float: left;*/
+    /*word-wrap: break-word;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*#easywp-left-sidebar {*/
+    /*width: 235px;*/
+    /*float: left;*/
+    /*margin: 0 0 0 -895px;*/
+    /*padding: 0 10px 0 0;*/
+    /*word-wrap: break-word;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*#easywp-right-sidebar {*/
+    /*width: 235px;*/
+    /*float: left;*/
+    /*margin: 0;*/
+    /*padding: 0 0 0 10px;*/
+    /*word-wrap: break-word;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*.easywp-body-full-width #easywp-content-wrapper {*/
+    /*background: #fff;*/
+/*}*/
+
+/*.easywp-body-full-width #easywp-main-wrapper {*/
+    /*width: 100%;*/
+    /*float: none;*/
+    /*margin: 0;*/
+    /*padding: 0 10px;*/
+/*}*/
+
+/*.easywp-body-full-width #easywp-left-sidebar {*/
+    /*width: 100%;*/
+    /*padding: 10px;*/
+    /*margin: 0;*/
+    /*float: none;*/
+    /*background: #e0e0e0;*/
+/*}*/
+
+/*.easywp-body-full-width #easywp-right-sidebar {*/
+    /*width: 100%;*/
+    /*padding: 10px;*/
+    /*margin: 0;*/
+    /*float: none;*/
+    /*background: #e0e0e0;*/
+/*}*/
+
+/*!* Posts & Pages*/
+/*-------------------------------------------------------------- *!*/
+/*.page-header {*/
+    /*padding: 5px 0;*/
+    /*margin-bottom: 20px;*/
+    /*border-bottom: 2px dashed #eee;*/
+    /*border-top: none;*/
+/*}*/
+
+/*h1.page-title {*/
+    /*padding: 10px 0;*/
+    /*font-size: 28px;*/
+    /*text-align: center;*/
+    /*margin: 10px 0;*/
+/*}*/
+
+/*h1.page-title a {*/
+    /*;*/
+/*}*/
+
+/*.taxonomy-description {*/
+    /*text-align: center;*/
+/*}*/
+
+/*.page-content {*/
+    /*margin: 12px 0;*/
+    /*padding: 0;*/
+/*}*/
+
+/*.post {*/
+    /*margin: 0 -10px 15px;*/
+    /*border-bottom: 1px dotted #ddd;*/
+    /*padding: 0 10px 10px;*/
+/*}*/
+
+/*.entry-header {*/
+    /*text-align: center;*/
+/*}*/
+
+/*.entry-title {*/
+    /*color: #333;*/
+    /*margin: 0 0 15px 0;*/
+    /*padding: 0;*/
+    /*font: normal bold 24px 'Playfair Display',sans-serif;*/
+    /*line-height: 1.1;*/
+/*}*/
+
+/*.single .entry-title {*/
+    /*font-size: 24px;*/
+    /*line-height: 1.2;*/
+/*}*/
+
+/*.entry-title a {*/
+    /*display: block;*/
+    /*text-decoration: none;*/
+    /*color: #333;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*.entry-title a:hover {*/
+    /*color: #000;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*.post-body {*/
+    /*margin: 0;*/
+    /*padding: 0 0 0 0;*/
+    /*line-height: 22px;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*.post-footer {*/
+    /*margin: 5px 0;*/
+/*}*/
+
+/*.easywp-post-thumbnail {*/
+    /*float: none;*/
+    /*margin: 0 auto 10px auto;*/
+    /*padding: 0;*/
+    /*border: none;*/
+    /*background: none;*/
+    /*max-width: 100%;*/
+    /*height: auto;*/
+    /*display: block;*/
+/*}*/
+
+/*.entry-meta {*/
+    /*line-height: 1.384;*/
+    /*padding: 0 0 10px;*/
+/*}*/
+
+/*.entry-content {*/
+    /*margin: 0 0 10px 0;*/
+/*}*/
+
+/*.entry-summary {*/
+    /*margin: 0 0 10px 0;*/
+/*}*/
+
+/*footer.entry-footer {*/
+    /*margin-top: 10px;*/
+    /*text-align: center;*/
+/*}*/
+
+/*.easywp-readmore {*/
+    /*margin-top: 5px;*/
+    /*margin-bottom: 5px;*/
+    /*float: none;*/
+    /*text-align: center;*/
+/*}*/
+
+/*.easywp-readmore a {*/
+    /*color: #fff;*/
+    /*background: #333;*/
+    /*padding: 8px 14px;*/
+    /*line-height: 1;*/
+    /*display: inline-block;*/
+    /*text-decoration: none;*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+/*.easywp-readmore a:hover {*/
+    /*color: #fff;*/
+    /*background: #000;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*.navigation.posts-navigation:before,.navigation.posts-navigation:after {*/
+    /*content: " ";*/
+    /*display: table;*/
+/*}*/
+
+/*.navigation.posts-navigation:after {*/
+    /*clear: both;*/
+/*}*/
+
+/*.navigation.posts-navigation {*/
+    /*padding: 10px 0 10px;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*.navigation.post-navigation {*/
+    /*padding: 10px 0 20px;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*.nav-previous {*/
+    /*float: left;*/
+    /*text-align: left;*/
+/*}*/
+
+/*.nav-next {*/
+    /*float: right;*/
+    /*text-align: right;*/
+/*}*/
+
+/*.sticky {*/
+/*}*/
+
+/*.updated:not(.published) {*/
+    /*display: none;*/
+/*}*/
+
+/*.byline {*/
+/*}*/
+
+/*!* Sidebar Content----------------------------------------------- *!*/
+/*.easywp-sidebar {*/
+    /*margin: 0 0 10px 0;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*.easywp-sidebar .widget {*/
+    /*margin: 0 0 15px 0;*/
+    /*padding: 0;*/
+    /*color: #444444;*/
+/*}*/
+
+/*.easywp-sidebar .widget a {*/
+    /*text-decoration: none;*/
+    /*color: #444444;*/
+/*}*/
+
+/*.easywp-sidebar .widget a:hover {*/
+    /*text-decoration: none;*/
+    /*color: #000000;*/
+/*}*/
+
+/*.easywp-sidebar .widget-title {*/
+    /*margin: 0 0 10px;*/
+    /*padding: 10px;*/
+    /*background: #333333;*/
+    /*color: #fff;*/
+    /*font: normal normal 16px 'Playfair Display',sans-serif;*/
+    /*line-height: 1;*/
+    /*text-decoration: none;*/
+    /*text-transform: none;*/
+/*}*/
+
+/*.easywp-sidebar .widget-title a {*/
+    /*color: #fff;*/
+/*}*/
+
+/*.easywp-sidebar .widget-title a:hover {*/
+    /*color: #fff;*/
+/*}*/
+
+/*.easywp-sidebar .widget ul {*/
+    /*list-style-type: none;*/
+    /*list-style: none;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+/*.easywp-sidebar .widget ul li {*/
+    /*padding: 0 0 6px 0;*/
+    /*margin: 0 0 6px;*/
+/*}*/
+
+/*.easywp-sidebar .widget ul li li {*/
+    /*margin: 2px 0 2px 8px;*/
+    /*padding: 0 0 2px 0;*/
+/*}*/
+
+/*.widget-container {*/
+    /*list-style-type: none;*/
+    /*list-style: none;*/
+    /*margin: 0 0 15px 0;*/
+    /*padding: 0;*/
+/*}*/
+
+/*.widget select {*/
+    /*width: 100%;*/
+    /*border: 1px solid #ccc;*/
+    /*padding: 3px 5px;*/
+/*}*/
+
+/*!* FOOTER ----------------------------------------------- *!*/
+/*#easywp-site-info-container {*/
+/*}*/
+
+/*#easywp-site-info {*/
+    /*margin-bottom: 15px;*/
+/*}*/
+
+/*#easywp-copyrights {*/
+    /*color: #FFF;*/
+    /*text-align: center;*/
+    /*padding: 20px 0;*/
+    /*background: #333333;*/
+/*}*/
+
+/*#easywp-copyrights a {*/
+    /*color: #FFF;*/
+/*}*/
+
+/*#easywp-copyrights a:hover {*/
+    /*color: #FFF;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*#easywp-credits {*/
+    /*color: #7D7D7D;*/
+    /*text-align: center;*/
+    /*font-size: 90%;*/
+    /*padding: 10px 0 0;*/
+/*}*/
+
+/*#easywp-credits a {*/
+    /*color: #7D7D7D;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*#easywp-credits a:hover {*/
+    /*text-decoration: none;*/
+    /*color: #7D7D7D;*/
+/*}*/
+
+/*#easywp-footer-widgets-container {*/
+    /*background: #e0e0e0;*/
+    /*border-left: 1px solid #a8a8a8;*/
+    /*border-right: 1px solid #a8a8a8;*/
+    /*border-top: 1px solid #a8a8a8;*/
+/*}*/
+
+/*#easywp-footer-widgets {*/
+    /*padding: 20px 15px;*/
+    /*border-left: 1px solid #f9f9f9;*/
+    /*border-right: 1px solid #f9f9f9;*/
+    /*border-top: 1px solid #f9f9f9;*/
+/*}*/
+
+/*.easywp-footer-widget-box {*/
+    /*width: 23.5%;*/
+    /*float: left;*/
+    /*margin-right: 2%;*/
+/*}*/
+
+/*.easywp-footer-widget-box:last-child {*/
+    /*margin-right: 0;*/
+/*}*/
+
+/*#easywp-footer-widgets .widget {*/
+    /*margin: 0 0 15px 0;*/
+    /*padding: 0;*/
+    /*color: #444444;*/
+/*}*/
+
+/*#easywp-footer-widgets .widget a {*/
+    /*color: #444444;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*#easywp-footer-widgets .widget a:hover {*/
+    /*color: #000000;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*#easywp-footer-widgets .widget .widget-title {*/
+    /*margin: 0 0 10px;*/
+    /*padding: 10px;*/
+    /*background: #333333;*/
+    /*color: #fff;*/
+    /*font: normal normal 16px 'Playfair Display',sans-serif;*/
+    /*line-height: 1;*/
+    /*text-decoration: none;*/
+    /*text-transform: none;*/
+/*}*/
+
+/*#easywp-footer-widgets .widget .widget-title a {*/
+    /*color: #fff;*/
+/*}*/
+
+/*#easywp-footer-widgets .widget .widget-title a:hover {*/
+    /*color: #fff;*/
+/*}*/
+
+/*#easywp-footer-widgets .widget ul {*/
+    /*list-style-type: none;*/
+    /*list-style: none;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+/*#easywp-footer-widgets .widget ul li {*/
+    /*padding: 0 0 6px 0;*/
+    /*margin: 0 0 6px;*/
+/*}*/
+
+/*!* Social Icons ----------------------------------------------- *!*/
+/*.easywp-social-icons {*/
+    /*font-size: 14px;*/
+    /*line-height: 1;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*text-align: center;*/
+    /*background: #e0e0e0;*/
+    /*color: #000;*/
+    /*text-shadow: 0 1px 0 #fff;*/
+    /*border-left: 1px solid #a8a8a8;*/
+    /*border-right: 1px solid #a8a8a8;*/
+    /*border-bottom: 1px solid #a8a8a8;*/
+/*}*/
+
+/*.easywp-social-icons-inner {*/
+    /*margin: 0;*/
+    /*padding: 8px 10px 4px;*/
+    /*border-left: 1px solid #f9f9f9;*/
+    /*border-right: 1px solid #f9f9f9;*/
+    /*border-bottom: 1px solid #f9f9f9;*/
+/*}*/
+
+/*.easywp-social-icons a {*/
+    /*display: inline-block;*/
+    /*margin-right: 5px;*/
+    /*margin-bottom: 4px;*/
+    /*padding: 6px;*/
+    /*font-size: 14px;*/
+    /*line-height: 14px;*/
+    /*width: 26px;*/
+    /*height: 26px;*/
+    /*background: #333;*/
+    /*color: #fff;*/
+    /*text-shadow: 0 1px 0 #000;*/
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+    /*-webkit-border-radius: 50%;*/
+    /*-moz-border-radius: 50%;*/
+    /*border-radius: 50%;*/
+/*}*/
+
+/*.easywp-social-icons a:hover {*/
+    /*color: #fff;*/
+    /*background: #000;*/
+    /*text-shadow: 0 1px 0 #000;*/
+/*}*/
+
+/*!* Search ----------------------------------------------- *!*/
+/*#easywp-search {*/
+    /*border: 1px solid #ccc;*/
+    /*background: #fff url(images/search.png) 99% 50% no-repeat;*/
+    /*text-align: left;*/
+    /*padding: 6px 24px 6px 6px;*/
+/*}*/
+
+/*#easywp-search #s {*/
+    /*background: none;*/
+    /*color: #333;*/
+    /*border: 0;*/
+    /*width: 100%;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+    /*outline: none;*/
+    /*font-family: inherit;*/
+/*}*/
+
+/*#easywp-search .search-submit {*/
+    /*display: none;*/
+/*}*/
+
+/*!* Tag Cloud Widget*/
+/*-------------------------------------------------------------- *!*/
+/*.widget_tag_cloud a {*/
+    /*display: inline-block;*/
+    /*color: #666 !important;*/
+    /*background: #f6f6f6 !important;*/
+    /*border: 1px solid #cccccc;*/
+    /*font-size: 13px !important;*/
+    /*padding: 3px 5px;*/
+    /*margin: 0 5px 5px 0;*/
+    /*text-decoration: none;*/
+    /*line-height: 1;*/
+    /*-webkit-transition: .2s ease-in;*/
+    /*-moz-transition: .2s ease-in;*/
+    /*-o-transition: .2s ease-in;*/
+    /*transition: .2s ease-in;*/
+    /*text-shadow: none !important;*/
+/*}*/
+
+/*.widget_tag_cloud a:hover {*/
+    /*color: #fff !important;*/
+    /*background: #333 !important;*/
+    /*border: 1px solid #333;*/
+/*}*/
+
+/*!* 404 Page ----------------------------------------------- *!*/
+/*.error404 .page-content .widget {*/
+    /*margin: 0 0 25px 0;*/
+/*}*/
+
+/*!* Other Widgets*/
+/*-------------------------------------------------------------- *!*/
+/*#wp-calendar {*/
+    /*width: 100%;*/
+    /*background: #fff;*/
+/*}*/
+
+/*#wp-calendar caption {*/
+    /*border-top: 1px dotted #ccc;*/
+    /*text-align: right;*/
+    /*font-weight: 700;*/
+    /*color: #333;*/
+    /*font-size: 12px;*/
+    /*margin-top: 0;*/
+    /*padding: 10px 10px 0 0;*/
+    /*padding-bottom: 15px;*/
+    /*background: #fff;*/
+/*}*/
+
+/*#wp-calendar thead {*/
+    /*font-size: 10px;*/
+/*}*/
+
+/*#wp-calendar thead th {*/
+    /*padding-bottom: 10px;*/
+/*}*/
+
+/*#wp-calendar tbody {*/
+    /*color: #aaa;*/
+/*}*/
+
+/*#wp-calendar tbody td {*/
+    /*background: #f5f5f5;*/
+    /*border: 1px solid #eee;*/
+    /*text-align: center;*/
+    /*padding: 8px;*/
+/*}*/
+
+/*#wp-calendar tbody td:hover {*/
+    /*background: #fff;*/
+/*}*/
+
+/*#wp-calendar tbody .pad {*/
+    /*background: none;*/
+/*}*/
+
+/*#wp-calendar tfoot #next {*/
+    /*font-size: 10px;*/
+    /*text-transform: uppercase;*/
+    /*text-align: right;*/
+/*}*/
+
+/*#wp-calendar tfoot #prev {*/
+    /*font-size: 10px;*/
+    /*text-transform: uppercase;*/
+    /*padding-top: 0;*/
+/*}*/
+
+/*#wp-calendar thead th {*/
+    /*padding-bottom: 10px;*/
+    /*text-align: center;*/
+/*}*/
+
+/*!* Alignments*/
+/*-------------------------------------------------------------- *!*/
+/*img.centered {*/
+    /*display: block;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*margin-bottom: 10px;*/
+    /*padding: 0;*/
+/*}*/
+
+/*img.alignnone {*/
+    /*padding: 5px 5px;*/
+    /*margin: 0 0 10px 0;*/
+    /*display: inline;*/
+    /*background: #eee;*/
+/*}*/
+
+/*img.alignright {*/
+    /*padding: 5px 5px;*/
+    /*margin: 5px 0 10px 10px;*/
+    /*display: inline;*/
+    /*background: #eee;*/
+/*}*/
+
+/*img.alignleft {*/
+    /*padding: 5px 5px;*/
+    /*margin: 10px 15px 10px 0;*/
+    /*display: inline;*/
+/*}*/
+
+/*.aligncenter {*/
+    /*display: block;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*margin-bottom: 10px;*/
+/*}*/
+
+/*.alignright {*/
+    /*float: right;*/
+    /*margin: 0 0 10px 10px;*/
+/*}*/
+
+/*.alignleft {*/
+    /*float: left;*/
+    /*margin: 10px 15px 10px 0;*/
+/*}*/
+
+/*!* Captions*/
+/*-------------------------------------------------------------- *!*/
+/*.wp-caption {*/
+    /*text-align: center;*/
+    /*background: #eee;*/
+    /*padding: 4px 0 5px 0;*/
+    /*max-width: 100%;*/
+/*}*/
+
+/*.wp-caption img {*/
+    /*margin: 0 0 5px 0;*/
+    /*padding: 0;*/
+    /*border: 0;*/
+/*}*/
+
+/*.wp-caption p.wp-caption-text {*/
+    /*margin: 0;*/
+    /*padding: 0 0 0 0;*/
+    /*font-size: 11px;*/
+    /*font-weight: normal;*/
+    /*line-height: 12px;*/
+    /*color: #444;*/
+/*}*/
+
+/*!* Galleries*/
+/*-------------------------------------------------------------- *!*/
+/*.gallery {*/
+    /*margin-bottom: 1.5em;*/
+/*}*/
+
+/*.gallery-item {*/
+    /*display: inline-block;*/
+    /*text-align: center;*/
+    /*vertical-align: top;*/
+    /*width: 100%;*/
+/*}*/
+
+/*.gallery-columns-2 .gallery-item {*/
+    /*max-width: 50%;*/
+/*}*/
+
+/*.gallery-columns-3 .gallery-item {*/
+    /*max-width: 33.33%;*/
+/*}*/
+
+/*.gallery-columns-4 .gallery-item {*/
+    /*max-width: 25%;*/
+/*}*/
+
+/*.gallery-columns-5 .gallery-item {*/
+    /*max-width: 20%;*/
+/*}*/
+
+/*.gallery-columns-6 .gallery-item {*/
+    /*max-width: 16.66%;*/
+/*}*/
+
+/*.gallery-columns-7 .gallery-item {*/
+    /*max-width: 14.28%;*/
+/*}*/
+
+/*.gallery-columns-8 .gallery-item {*/
+    /*max-width: 12.5%;*/
+/*}*/
+
+/*.gallery-columns-9 .gallery-item {*/
+    /*max-width: 11.11%;*/
+/*}*/
+
+/*.gallery-caption {*/
+    /*display: block;*/
+/*}*/
+
+/*!* Comments*/
+/*-------------------------------------------------------------- *!*/
+/*h2.comments-title {*/
+    /*font-size: 16px;*/
+    /*padding-bottom: 10px;*/
+/*}*/
+
+/*.comment-content a {*/
+    /*word-wrap: break-word;*/
+/*}*/
+
+/*.comment-content a,.comment-content a:visited {*/
+    /*text-decoration: underline;*/
+/*}*/
+
+/*.comment-content a:hover,.comment-content a:focus,.comment-content a:active {*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*.comment-respond,.no-comments {*/
+    /*padding: 14px;*/
+    /*border-top: 1px solid #eee;*/
+/*}*/
+
+/*.comment-respond #cancel-comment-reply-link {*/
+    /*font-size: 14px;*/
+    /*font-weight: 400;*/
+    /*margin-left: 1em;*/
+/*}*/
+
+/*.comment-respond .logged-in-as {*/
+    /*font-size: 13px;*/
+/*}*/
+
+/*.comment-form label {*/
+    /*display: inline-block;*/
+    /*min-width: 6em;*/
+    /*padding-right: 1em;*/
+/*}*/
+
+/*.comment-form .form-allowed-tags,.comment-form .form-allowed-tags code {*/
+    /*font-size: 12px;*/
+/*}*/
+
+/*.comment-content a {*/
+    /*word-wrap: break-word;*/
+/*}*/
+
+/*.comments-area ol {*/
+    /*list-style-type: none;*/
+    /*margin: 1em 0 0;*/
+/*}*/
+
+/*.comments-area > ol {*/
+    /*margin: 0;*/
+/*}*/
+
+/*.comments-area ol.children {*/
+    /*border: 1px solid #eee;*/
+    /*border-top: 0;*/
+    /*margin-bottom: 0;*/
+    /*box-shadow: 0 3px 3px rgba(200,200,200,0.1);*/
+/*}*/
+
+/*.comment-list {*/
+    /*margin-top: 1em;*/
+/*}*/
+
+/*.comment-list .comment,.comment-list .pingback {*/
+    /*border: 1px solid #eaeaea;*/
+    /*padding: 1em;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
+/*.comment-list .comment.even,.comment-list .pingback.even {*/
+    /*background: #f5f5f5;*/
+/*}*/
+
+/*.comment-list .comment.odd,.comment-list .pingback.odd {*/
+    /*background: #fbfbfb;*/
+/*}*/
+
+/*.comment .comment-metadata {*/
+    /*font-size: 14px;*/
+    /*font-style: italic;*/
+    /*color: #aaa;*/
+/*}*/
+
+/*.comment .edit-link,.pingback .edit-link {*/
+    /*float: right;*/
+    /*font-size: 14px;*/
+    /*font-style: italic;*/
+/*}*/
+
+/*.comment .comment-meta .comment-author .avatar {*/
+    /*float: left;*/
+    /*margin-right: 1em;*/
+/*}*/
+
+/*.comment .comment-content {*/
+    /*margin-top: 1em;*/
+/*}*/
+
+/*.comment .comment-content p {*/
+    /*margin-bottom: 1em;*/
+/*}*/
+
+/*.comment .reply {*/
+    /*font-size: 14px;*/
+    /*font-style: italic;*/
+/*}*/
+
+/*.comment .comment-respond {*/
+    /*margin-top: 1em;*/
+/*}*/
+
+/*.bypostauthor {*/
+    /*display: block;*/
+/*}*/
+
+/*#respond {*/
+/*}*/
+
+/*#respond input[type=text],textarea {*/
+    /*-webkit-transition: all .3s ease-in-out;*/
+    /*-moz-transition: all .3s ease-in-out;*/
+    /*-ms-transition: all .3s ease-in-out;*/
+    /*-o-transition: all .3s ease-in-out;*/
+    /*outline: none;*/
+    /*padding: 3px 0 3px 3px;*/
+    /*margin: 5px 1px 3px 0;*/
+    /*border: 1px solid #DDD;*/
+/*}*/
+
+/*#respond input[type=text]:focus,textarea:focus {*/
+    /*-webkit-box-shadow: 0 0 5px rgba(81,203,238,1);*/
+    /*-moz-box-shadow: 0 0 5px rgba(81,203,238,1);*/
+    /*box-shadow: 0 0 5px rgba(81,203,238,1);*/
+    /*margin: 5px 1px 3px 0;*/
+    /*border: 1px solid rgba(81,203,238,1);*/
+/*}*/
+
+/*!* Primary Menu*/
+/*-------------------------------------------------------------- *!*/
+/*.easywp-nav-primary-wrapper {*/
+    /*width: 1150px;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+/*.easywp-nav-primary:before {*/
+    /*content: " ";*/
+    /*display: table;*/
+/*}*/
+
+/*.easywp-nav-primary:after {*/
+    /*clear: both;*/
+    /*content: " ";*/
+    /*display: table;*/
+/*}*/
+
+/*.easywp-nav-primary ul {*/
+    /*list-style: none;*/
+    /*list-style-type: none;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+/*.easywp-nav-primary {*/
+    /*line-height: 1;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+/*}*/
+
+/*.easywp-nav-primary li {*/
+    /*border-width: 0;*/
+    /*display: inline-block;*/
+    /*margin: 0;*/
+    /*padding-bottom: 0;*/
+    /*text-align: left;*/
+/*}*/
+
+/*.easywp-nav-primary a {*/
+    /*border: none;*/
+    /*color: #ffffff;*/
+    /*display: block;*/
+    /*padding: 15px;*/
+    /*position: relative;*/
+/*}*/
+
+/*.easywp-nav-primary a:hover,.easywp-nav-primary .current-menu-item > a {*/
+    /*color: #dddddd;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*.easywp-nav-primary a:hover,.easywp-nav-primary .current_page_item > a {*/
+    /*color: #dddddd;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*.easywp-nav-primary ul ul {*/
+    /*left: -9999px;*/
+    /*opacity: 0;*/
+    /*position: absolute;*/
+    /*-webkit-transition: opacity .4s ease-in-out;*/
+    /*-moz-transition: opacity .4s ease-in-out;*/
+    /*-ms-transition: opacity .4s ease-in-out;*/
+    /*-o-transition: opacity .4s ease-in-out;*/
+    /*transition: opacity .4s ease-in-out;*/
+    /*width: 190px;*/
+    /*z-index: 99;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+/*.easywp-nav-primary ul ul a {*/
+    /*border: 1px solid #333333;*/
+    /*border-top: none;*/
+    /*letter-spacing: 0;*/
+    /*padding: 16px 20px;*/
+    /*position: relative;*/
+    /*width: 190px;*/
+/*}*/
+
+/*.easywp-nav-primary ul ul  ul {*/
+    /*margin: -46px 0 0 189px;*/
+/*}*/
+
+/*.easywp-nav-primary li:hover {*/
+    /*position: static;*/
+/*}*/
+
+/*.easywp-nav-primary li:hover > ul {*/
+    /*left: auto;*/
+    /*opacity: 1;*/
+/*}*/
+
+/*.easywp-nav-primary {*/
+    /*float: none;*/
+    /*background: #000000;*/
+    /*border-top: 1px solid #222222;*/
+    /*border-bottom: 1px solid #222222;*/
+/*}*/
+
+/*.easywp-nav-primary a {*/
+    /*font: normal normal 13px Domine,Georgia,Sans-serif,Arial;*/
+    /*line-height: 1;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*ul.easywp-nav-menu > li > a {*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+/*div.easywp-nav-menu > ul > li > a {*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+/*.easywp-nav-primary a:hover,.easywp-nav-primary .current-menu-item > a,.easywp-nav-primary ul ul .current-menu-item > a:hover,.easywp-nav-primary .current_page_item > a,.easywp-nav-primary ul ul .current_page_item > a:hover {*/
+    /*color: #dddddd;*/
+/*}*/
+
+/*.easywp-nav-primary ul ul {*/
+    /*background-color: #222222;*/
+/*}*/
+
+/*.easywp-nav-primary ul ul a {*/
+    /*padding: 16px 20px;*/
+/*}*/
+
+/*.easywp-nav-primary ul ul .current-menu-item > a {*/
+    /*color: #dddddd;*/
+/*}*/
+
+/*.easywp-nav-primary ul ul .current_page_item > a {*/
+    /*color: #dddddd;*/
+/*}*/
+
+/*.easywp-responsive-menu-icon {*/
+    /*cursor: pointer;*/
+    /*display: none;*/
+    /*margin-top: 6px;*/
+    /*margin-bottom: 4px;*/
+    /*text-align: center;*/
+/*}*/
+
+/*.easywp-responsive-menu-icon::before {*/
+    /*color: #ffffff;*/
+    /*content: "\f0c9";*/
+    /*font: normal 24px/1 FontAwesome;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+/*@media only screen and (min-width: 1168px) {*/
+/*ul.easywp-nav-menu > li > a {*/
+    /*border-right: 1px solid #333;*/
+/*}*/
+
+/*div.easywp-nav-menu > ul > li > a {*/
+    /*border-right: 1px solid #333;*/
+/*}*/
+/*}*/
+
+/*@media only screen and (max-width: 1167px) {*/
+/*.easywp-nav-primary li,.easywp-nav-primary {*/
+    /*float: none;*/
+/*}*/
+
+/*.easywp-nav-menu {*/
+    /*text-align: center;*/
+/*}*/
+
+/*.easywp-nav-menu.easywp-responsive-menu {*/
+    /*display: none;*/
+/*}*/
+
+/*.easywp-nav-menu.easywp-responsive-menu li,.easywp-responsive-menu-icon {*/
+    /*display: block;*/
+/*}*/
+
+/*.easywp-nav-menu.easywp-responsive-menu li:hover {*/
+    /*position: static;*/
+/*}*/
+
+/*.easywp-nav-primary li.current-menu-item > a,.easywp-nav-primary li.current_page_item > a,.easywp-nav-primary ul ul li.current-menu-item > a:hover,.easywp-nav-primary ul ul li.current_page_item > a:hover,.easywp-nav-primary li a,.easywp-nav-primary li a:hover {*/
+    /*display: block;*/
+    /*padding: 20px;*/
+/*}*/
+
+/*.easywp-nav-menu.easywp-responsive-menu .menu-item-has-children {*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*.easywp-nav-menu.easywp-responsive-menu .page_item_has_children {*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*.easywp-nav-menu.easywp-responsive-menu .menu-item-has-children > a {*/
+    /*margin-right: 60px;*/
+/*}*/
+
+/*.easywp-nav-menu.easywp-responsive-menu .page_item_has_children > a {*/
+    /*margin-right: 60px;*/
+/*}*/
+
+/*.easywp-nav-menu.easywp-responsive-menu > .menu-item-has-children:before {*/
+    /*content: "\f107";*/
+    /*float: right;*/
+    /*font: normal 20px/1 FontAwesome;*/
+    /*height: 20px;*/
+    /*padding: 15px 20px;*/
+    /*right: 0;*/
+    /*text-align: right;*/
+    /*z-index: 9999;*/
+    /*color: #ffffff;*/
+/*}*/
+
+/*.easywp-nav-menu.easywp-responsive-menu > ul > .page_item_has_children:before {*/
+    /*content: "\f107";*/
+    /*float: right;*/
+    /*font: normal 20px/1 FontAwesome;*/
+    /*height: 20px;*/
+    /*padding: 15px 20px;*/
+    /*right: 0;*/
+    /*text-align: right;*/
+    /*z-index: 9999;*/
+    /*color: #ffffff;*/
+/*}*/
+
+/*.easywp-nav-menu.easywp-responsive-menu .menu-open.menu-item-has-children:before {*/
+    /*content: "\f106";*/
+/*}*/
+
+/*.easywp-nav-menu.easywp-responsive-menu .menu-open.page_item_has_children:before {*/
+    /*content: "\f106";*/
+/*}*/
+
+/*.easywp-nav-menu.easywp-responsive-menu > li > ul {*/
+    /*display: none;*/
+/*}*/
+
+/*div.easywp-nav-menu.easywp-responsive-menu > ul > li > ul {*/
+    /*display: none;*/
+/*}*/
+
+/*.easywp-nav-primary ul ul {*/
+    /*left: auto;*/
+    /*opacity: 1;*/
+    /*position: relative;*/
+    /*-webkit-transition: opacity .4s ease-in-out;*/
+    /*-moz-transition: opacity .4s ease-in-out;*/
+    /*-ms-transition: opacity .4s ease-in-out;*/
+    /*-o-transition: opacity .4s ease-in-out;*/
+    /*transition: opacity .4s ease-in-out;*/
+    /*width: 100%;*/
+    /*z-index: 99;*/
+    /*margin: 0;*/
+/*}*/
+
+/*.easywp-nav-primary ul ul ul {*/
+    /*background-color: transparent;*/
+    /*margin: 0;*/
+    /*padding-left: 25px;*/
+/*}*/
+
+/*.easywp-nav-primary ul ul li a,.easywp-nav-primary ul ul li a:hover {*/
+    /*padding: 12px 20px;*/
+    /*position: relative;*/
+    /*width: 100%;*/
+/*}*/
+/*}*/
+
+/*!* Responsive Media Queries*/
+/*-------------------------------------------------------------- *!*/
+/*@media only screen and (max-width: 1167px) {*/
+/*#easywp-outer-wrapper {*/
+    /*width: 80%;*/
+    /*padding: 0;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+/*#easywp-header-wrapper {*/
+    /*width: 100%;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+    /*height: auto;*/
+    /*border-left: 0 solid #a8a8a8;*/
+    /*border-right: 0 solid #a8a8a8;*/
+/*}*/
+
+/*#easywp-header-inner {*/
+    /*border-left: 0 solid #f9f9f9;*/
+    /*border-right: 0 solid #f9f9f9;*/
+/*}*/
+
+/*#easywp-header-content {*/
+    /*padding: 10px;*/
+/*}*/
+
+/*.easywp-logo-image {*/
+    /*padding: 0;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+/*#easywp-header-left {*/
+    /*width: 100%;*/
+    /*padding: 0 0 10px;*/
+    /*margin: 0;*/
+    /*float: none;*/
+    /*text-align: center;*/
+/*}*/
+
+/*#easywp-header-right {*/
+    /*width: 100%;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+    /*float: none;*/
+    /*text-align: center;*/
+/*}*/
+
+/*#easywp-header-right .widget {*/
+    /*float: none;*/
+    /*padding: 0;*/
+/*}*/
+
+/*.easywp-nav-primary-wrapper {*/
+    /*width: 100%;*/
+/*}*/
+
+/*#easywp-content-wrapper {*/
+    /*width: 100%;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*background-image: none;*/
+    /*clear: both;*/
+/*}*/
+
+/*#easywp-main-wrapper {*/
+    /*width: 100%;*/
+    /*padding: 10px;*/
+    /*margin: 0;*/
+    /*float: none;*/
+/*}*/
+
+/*#easywp-left-sidebar {*/
+    /*width: 100%;*/
+    /*padding: 10px;*/
+    /*margin: 0;*/
+    /*float: none;*/
+    /*background: #e0e0e0;*/
+/*}*/
+
+/*#easywp-right-sidebar {*/
+    /*width: 100%;*/
+    /*padding: 10px;*/
+    /*margin: 0;*/
+    /*float: none;*/
+    /*background: #e0e0e0;*/
+/*}*/
+
+/*.easywp-body-full-width #easywp-main-wrapper {*/
+    /*padding: 10px;*/
+/*}*/
+
+/*#easywp-footer-widgets-container {*/
+    /*border-left: 0 solid #a8a8a8;*/
+    /*border-right: 0 solid #a8a8a8;*/
+/*}*/
+
+/*#easywp-footer-widgets {*/
+    /*padding: 20px 10px;*/
+    /*border-left: 0 solid #f9f9f9;*/
+    /*border-right: 0 solid #f9f9f9;*/
+/*}*/
+
+/*.easywp-footer-widget-box {*/
+    /*width: 100%;*/
+    /*float: none;*/
+    /*padding: 10px 0;*/
+    /*margin: 0;*/
+/*}*/
+
+/*#easywp-site-info {*/
+    /*height: auto;*/
+/*}*/
+
+/*#easywp-copyrights,#easywp-credits {*/
+    /*width: 100%;*/
+    /*padding: 5px 0;*/
+    /*margin: 0;*/
+    /*display: block;*/
+    /*float: none;*/
+    /*text-align: center;*/
+    /*height: auto;*/
+/*}*/
+/*}*/
+
+/*@media only screen and (max-width: 768px) {*/
+/*#easywp-outer-wrapper {*/
+    /*width: 100%;*/
+/*}*/
+/*}*/
+
+/*@media print {*/
+/*body {*/
+    /*color: #000;*/
+    /*background: #fff;*/
+    /*font-size: 18px;*/
+/*}*/
+
+/*.entry-title {*/
+    /*font-size: 28px;*/
+/*}*/
+
+/*#easywp-header-wrapper {*/
+    /*display: none;*/
+/*}*/
+
+/*.easywp-nav-primary {*/
+    /*display: none;*/
+/*}*/
+
+/*.easywp-social-icons {*/
+    /*display: none;*/
+/*}*/
+
+/*#easywp-content-wrapper {*/
+    /*background: #fff;*/
+/*}*/
+
+/*#easywp-left-sidebar {*/
+    /*display: none;*/
+/*}*/
+
+/*#easywp-right-sidebar {*/
+    /*display: none;*/
+/*}*/
+
+/*.entry-meta {*/
+    /*display: none;*/
+/*}*/
+
+/*.easywp-readmore {*/
+    /*display: none;*/
+/*}*/
+
+/*.entry-footer {*/
+    /*display: none;*/
+/*}*/
+
+/*#easywp-footer-widgets-container {*/
+    /*display: none;*/
+/*}*/
+
+/*#easywp-site-info-container {*/
+    /*display: none;*/
+/*}*/
+/*}*/

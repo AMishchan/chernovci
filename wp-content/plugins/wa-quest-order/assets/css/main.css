@@ -1,0 +1,134 @@
+.date-string{
+	text-decoration: none;
+}
+ul.day-line {list-style:none; }
+ul.day-line li {float: left;text-align: center;line-height: initial; background-color: #fff; color: #7d7d7d;}
+ul.day-line li:hover{cursor:pointer; background:#ababab;position: relative;color: #fff !important;font-weight: 600;}
+ ul.time-list li {cursor:pointer; background: linear-gradient(to top, #5f64f3 0%, #45509e 36%, #7373d8 100%);position: relative;color: #fff;font-weight: 600;}
+ul.time-list li:hover {cursor:pointer; background: #ababab;position: relative;color: #fff;font-weight: 600;}
+ul.day-line li:last-child {border-right: 2px solid #7171f3;border-radius: 0px 5px 5px 0px;}
+ul.day-line li:first-child{border-left: 2px solid #7171f3;border-radius: 5px 0px 0px 5px;}
+ul.day-line li {border-bottom: 2px solid #7171f3;border-top: 2px solid #7171f3;font-weight: 600;}
+.block-day {background: #ababab !important;position: relative;color: #fff !important;font-weight: 600;}
+.block-day::after {content: '';position: absolute;right: calc(50% - 11px);top: 100%;border: 11px solid transparent;border-top: 10px solid #ababab;}
+
+ul.time-list {list-style:none; margin: 0px; padding: 0px;}
+
+.hide-layout {
+  background: #000; /* фон */
+  bottom: 0;  /* координата снизу */
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* прозрачность для IE */
+  height: 100%; /* высота на всю страницу */
+  opacity: 0.5;  /* прозрачность слоя */
+  position: fixed; /* фиксируем элемент на странице*/
+  top: 0; /* координата сверху */
+  width: 100%; /* ширина на всю страницу */
+  z-index: 998; /* z-index для перекрытия остальных элементов */
+}
+
+.quest-info{
+	border: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+.quest-time{
+	border: none;
+}
+
+ul.time-list li{
+	background: #2777ba; /* Old browsers */
+	background: -moz-linear-gradient(top,  #005e63 0%, #004549 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #005e63 0%,#004549 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #005e63 0%,#004549 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2777ba', endColorstr='#7075c7',GradientType=0 ); /* IE6-9 */
+
+	text-align: center;
+	width: 9.5%;
+	margin-right: .5%;
+	border-radius: 4px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+ul.time-list li:hover{
+	background: #2777ba; /* Old browsers */
+	background: -moz-linear-gradient(top,  #004549 0%, #005e63 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #004549 0%,#005e63 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #004549 0%,#005e63 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2777ba', endColorstr='#7075c7',GradientType=0 ); /* IE6-9 */
+
+	text-align: center;
+	width: 9.5%;
+	margin-right: .5%;
+	border-radius: 4px;
+	display: inline-block;
+	margin-bottom: 10px;
+
+}
+ul.time-list li.booked{
+
+	background: #ffffff;
+	color: #aaa8a8;
+}
+.date-string span:first-child {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 25px;
+}
+.date-string ul li {
+	width: 7.14%;
+	text-align: center;
+	padding: 8px 0;
+	margin: 0;
+	background-color: #fff;
+}
+.date-string ul{
+	display: inline-block;
+	width: 100%;
+	padding: 7px 0;
+	margin: 0;
+}
+.row.wrap-quests{
+	margin-bottom: 20px;
+}
+.row.date-string{
+	margin-bottom: 50px;
+}
+.kvest-size{
+	font-size: 0.7em;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	padding: 5px 0;
+	color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+	.date-string ul li {
+
+		width: 14.28%;
+		float: left;
+	}
+	ul.time-list li{
+		background: transparent;
+		color: #aaa8a8;
+		border: 1px solid #dce2e8;
+		text-align: center;
+		width: 32.5%;
+		margin-right: .5%;
+		border-radius: 4px;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+
+	ul.day-line li{
+		margin-bottom: 10px;
+	}
+	.kvest-size{
+		margin-bottom: 10px;
+	}
+	ul.day-line li:nth-child(8){border-left: 2px solid #7171f3;border-radius: 5px 0px 0px 5px;}
+	ul.day-line li:nth-child(7){border-right: 2px solid #7171f3;border-radius: 0px 5px 5px 0px;}
+	ul.day-line li:nth-child(14){border-right: 2px solid #7171f3;border-radius: 0px 5px 5px 0px;}
+}
